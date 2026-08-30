@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruchi Singh | AI/ML Engineer & Data Analyst</title>
+  <meta name="description" content="Portfolio of Ruchi Singh - Data Analyst and Machine Learning Enthusiast with expertise in Python, IoT, ML models, and real-time data-driven solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo"><span class="logo-bracket">&lt;</span>RS<span class="logo-bracket">/&gt;</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="resume.pdf?v=2" target="_blank" class="nav-cta" id="resumeBtn">Resume <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-badge"><span class="badge-dot"></span><span>Open to Opportunities</span></div>
+        <div class="hero-greeting">Hi, I am</div>
+        <h1 class="hero-name"><span class="name-line">Ruchi</span><span class="name-line gradient-text">Singh</span></h1>
+        <div class="hero-typewriter"><span class="static-text">I build </span><span class="typewriter-text" id="typewriter"></span><span class="cursor-blink">|</span></div>
+        <p class="hero-description">Data Analyst and Machine Learning Enthusiast with hands-on experience in building real-time data-driven solutions using <strong>Python</strong>, <strong>IoT</strong>, and <strong>ML models</strong>. Passionate about turning raw data into actionable insights.</p>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-number">5+</span><span class="stat-label">Internships</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-item"><span class="stat-number">8.41</span><span class="stat-label">CGPA</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-item"><span class="stat-number">3+</span><span class="stat-label">Projects</span></div>
+        </div>
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn-primary" id="viewWorkBtn">View My Work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <a href="#contact" class="btn-secondary" id="contactBtn">Lets Talk</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/ruchi-singh-393016241/" target="_blank" class="social-link" id="linkedinHero" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://github.com/Ruchisingh13" target="_blank" class="social-link" id="githubHero" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="mailto:ruchisingh748828@gmail.com" class="social-link" id="emailHero" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-avatar-wrapper">
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="avatar-img-container"><img src="Ruchi1.png" alt="Ruchi Singh" id="avatarPhoto" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;display:block;" /></div>
+          <div class="float-badge badge-python"><span>🐍</span> Python</div>
+          <div class="float-badge badge-ml"><span>🤖</span> ML</div>
+          <div class="float-badge badge-iot"><span>📡</span> IoT</div>
+          <div class="float-badge badge-data"><span>📊</span> Data</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint"><span>Scroll to explore</span><div class="scroll-arrow"></div></div>
+  </section>
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">Get to know me</span><h2 class="section-title">About <span class="gradient-text">Me</span></h2></div>
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="about-card glass-card">
+            <div class="about-info-item"><span class="info-icon">📍</span><div><span class="info-label">Location</span><span class="info-value">Sampatchak, Patna - 800007</span></div></div>
+            <div class="about-info-item"><span class="info-icon">🎓</span><div><span class="info-label">Education</span><span class="info-value">BCA - Career Point University, Kota</span></div></div>
+            <div class="about-info-item"><span class="info-icon">⭐</span><div><span class="info-label">CGPA</span><span class="info-value">8.41 / 10 (2022-2025)</span></div></div>
+            <div class="about-info-item"><span class="info-icon">📧</span><div><span class="info-label">Email</span><span class="info-value">ruchisingh748828@gmail.com</span></div></div>
+            <div class="about-info-item"><span class="info-icon">📞</span><div><span class="info-label">Phone</span><span class="info-value">+91 9608919040</span></div></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <p class="about-text">I am a <strong>Data Analyst and Machine Learning Enthusiast</strong> with a passion for building intelligent, data-driven solutions. My journey spans from analyzing sensor data in IoT systems to developing predictive ML models that solve real-world problems.</p>
+          <p class="about-text">During my internships at <strong>Reve Automation LLP</strong>, <strong>IBM</strong>, <strong>Upflairs Pvt Ltd</strong>, and <strong>The Sparks Foundation</strong>, I have built interactive dashboards, trained ML models, and developed end-to-end data pipelines - all with Python as my primary weapon.</p>
+          <p class="about-text">I specialize in Computer Applications and Data Science, combining technical rigor with creative problem-solving to deliver solutions that actually matter.</p>
+          <div class="about-highlights">
+            <div class="highlight-chip">🎓 BCA Graduate</div>
+            <div class="highlight-chip">🤖 ML Enthusiast</div>
+            <div class="highlight-chip">📊 Data Analyst</div>
+            <div class="highlight-chip">📡 IoT Developer</div>
+            <div class="highlight-chip">🐍 Python Expert</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">What I work with</span><h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2></div>
+      <div class="skills-categories">
+        <div class="skill-category glass-card"><div class="cat-header"><span class="cat-icon">💻</span><h3>Programming</h3></div><div class="skill-tags"><span class="skill-tag tier-expert">Python</span><span class="skill-tag tier-expert">SQL</span><span class="skill-tag tier-mid">C</span><span class="skill-tag tier-mid">Java</span><span class="skill-tag tier-mid">R Programming</span><span class="skill-tag tier-mid">VB.NET</span><span class="skill-tag tier-mid">C#</span></div></div>
+        <div class="skill-category glass-card"><div class="cat-header"><span class="cat-icon">🧠</span><h3>AI and Machine Learning</h3></div><div class="skill-tags"><span class="skill-tag tier-expert">Machine Learning</span><span class="skill-tag tier-expert">Deep Learning</span><span class="skill-tag tier-expert">Scikit-learn</span><span class="skill-tag tier-mid">TensorFlow</span><span class="skill-tag tier-mid">PyTorch</span><span class="skill-tag tier-mid">NLP</span><span class="skill-tag tier-mid">Computer Vision</span><span class="skill-tag tier-mid">Weka</span><span class="skill-tag tier-mid">Orange</span></div></div>
+        <div class="skill-category glass-card"><div class="cat-header"><span class="cat-icon">📈</span><h3>Data Analysis and Visualization</h3></div><div class="skill-tags"><span class="skill-tag tier-expert">Pandas</span><span class="skill-tag tier-expert">NumPy</span><span class="skill-tag tier-expert">Matplotlib</span><span class="skill-tag tier-expert">Seaborn</span><span class="skill-tag tier-mid">Power BI</span><span class="skill-tag tier-mid">Tableau</span><span class="skill-tag tier-mid">Excel</span></div></div>
+        <div class="skill-category glass-card"><div class="cat-header"><span class="cat-icon">🌐</span><h3>Web and App Development</h3></div><div class="skill-tags"><span class="skill-tag tier-expert">Streamlit</span><span class="skill-tag tier-mid">Flask</span><span class="skill-tag tier-mid">HTML</span><span class="skill-tag tier-mid">CSS</span><span class="skill-tag tier-mid">Android Studio</span></div></div>
+        <div class="skill-category glass-card"><div class="cat-header"><span class="cat-icon">🔌</span><h3>IoT and Hardware</h3></div><div class="skill-tags"><span class="skill-tag tier-expert">Arduino</span><span class="skill-tag tier-expert">Sensor Data Integration</span><span class="skill-tag tier-mid">IoT Systems</span><span class="skill-tag tier-mid">Cloud Storage</span></div></div>
+        <div class="skill-category glass-card"><div class="cat-header"><span class="cat-icon">🛠️</span><h3>Tools and Platforms</h3></div><div class="skill-tags"><span class="skill-tag tier-expert">GitHub</span><span class="skill-tag tier-expert">VS Code</span><span class="skill-tag tier-mid">MS Office</span><span class="skill-tag tier-mid">Jupyter Notebook</span><span class="skill-tag tier-mid">Google Colab</span></div></div>
+      </div>
+    </div>
+  </section>
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">My Journey</span><h2 class="section-title">Experience and <span class="gradient-text">Education</span></h2></div>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div class="timeline-dot"><span>🏢</span></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta"><span class="timeline-type work">Work</span><span class="timeline-date">2024 - 2025</span></div>
+            <h3 class="timeline-title">Intern - Reve Automation LLP, Gujarat</h3>
+            <ul class="timeline-points"><li>Processed and analyzed real-time sensor data to improve data quality for ML models</li><li>Developed machine learning models for soil condition prediction and forecasting</li><li>Built interactive dashboards for real-time monitoring and data-driven insights</li><li>Improved data pipelines and contributed to mobile-based data collection systems</li></ul>
+            <div class="timeline-tags"><span>Python</span><span>ML</span><span>IoT</span><span>Dashboard</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"><span>💼</span></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta"><span class="timeline-type work">Work</span><span class="timeline-date">Jun - Jul 2024</span></div>
+            <h3 class="timeline-title">IBM Data Analytics Internship</h3>
+            <ul class="timeline-points"><li>Worked on data analysis, visualization, and business insights</li><li>Used Excel and BI tools for comprehensive reporting</li></ul>
+            <div class="timeline-tags"><span>Excel</span><span>Power BI</span><span>Data Analysis</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"><span>🔬</span></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta"><span class="timeline-type work">Work</span><span class="timeline-date">Jun - Aug 2024</span></div>
+            <h3 class="timeline-title">Data Science and ML Intern - Upflairs Pvt Ltd</h3>
+            <ul class="timeline-points"><li>Built ML models and performed data preprocessing and feature engineering</li><li>Evaluated model performance and improved prediction accuracy</li></ul>
+            <div class="timeline-tags"><span>Python</span><span>Scikit-learn</span><span>Feature Engineering</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"><span>⚡</span></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta"><span class="timeline-type work">Work</span><span class="timeline-date">Oct - Nov 2023</span></div>
+            <h3 class="timeline-title">ML Intern - The Sparks Foundation</h3>
+            <ul class="timeline-points"><li>Developed predictive models using supervised learning techniques</li><li>Worked on real-world datasets for classification and regression tasks</li></ul>
+            <div class="timeline-tags"><span>ML</span><span>Python</span><span>Supervised Learning</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"><span>🐍</span></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta"><span class="timeline-type work">Work</span><span class="timeline-date">Nov - Dec 2023</span></div>
+            <h3 class="timeline-title">Python Programming Intern - CodSoft</h3>
+            <ul class="timeline-points"><li>Strengthened programming, problem-solving, and automation skills</li><li>Built Python scripts and automation tools</li></ul>
+            <div class="timeline-tags"><span>Python</span><span>Automation</span><span>Problem Solving</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot edu"><span>🎓</span></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-meta"><span class="timeline-type edu">Education</span><span class="timeline-date">2022 - 2025</span></div>
+            <h3 class="timeline-title">Bachelor of Computer Applications (BCA)</h3>
+            <p class="timeline-org">Career Point University, Kota, Rajasthan</p>
+            <p class="timeline-sub">Specialization: Computer Applications and Data Science | <strong>CGPA: 8.41 / 10</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">What I have built</span><h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2></div>
+      <div class="projects-grid">
+        <div class="project-card glass-card" id="project1">
+          <div class="project-glow"></div>
+          <div class="project-header"><div class="project-icon">🌱</div><div class="project-links"><a href="https://github.com/Ruchisingh13/ML-Project-Harvesting" target="_blank" class="proj-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></div></div>
+          <h3 class="project-title">AI-Based Soil Condition Forecasting System</h3>
+          <p class="project-desc">Intelligent system using IoT and Machine Learning to predict soil conditions in real-time. Integrated 7-in-1 soil sensor (moisture, pH, temperature, conductivity) with ML algorithms to forecast soil fertility trends supporting precision agriculture.</p>
+          <div class="project-tech"><span>Python</span><span>Machine Learning</span><span>IoT</span><span>Arduino</span><span>Data Visualization</span><span>Cloud</span></div>
+          <div class="project-feature-pills"><span class="feature-pill">⚡ Real-time</span><span class="feature-pill">📈 Dashboard</span><span class="feature-pill">🔮 Forecasting</span></div>
+          <a href="https://github.com/Ruchisingh13/ML-Project-Harvesting" target="_blank" class="proj-demo-btn" id="demo1">View on GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+        <div class="project-card glass-card" id="project2">
+          <div class="project-glow glow-2"></div>
+          <div class="project-header"><div class="project-icon">🏨</div><div class="project-links"><a href="https://github.com/Ruchisingh13/King-Sukh-Guest-House-Website" target="_blank" class="proj-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></div></div>
+          <h3 class="project-title">King Sukh Guest House Website</h3>
+          <p class="project-desc">Designed and developed a fully responsive hospitality website for King Sukh Guest House. Built with modern HTML, CSS, and JavaScript featuring smooth animations, room showcase, amenities section, photo gallery, and an integrated booking/contact form for seamless guest experience.</p>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span></div>
+          <div class="project-feature-pills"><span class="feature-pill">📱 Responsive</span><span class="feature-pill">🎨 Modern UI</span><span class="feature-pill">📞 Booking Form</span></div>
+          <a href="https://github.com/Ruchisingh13/King-Sukh-Guest-House-Website" target="_blank" class="proj-demo-btn" id="demo2">View on GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+        <div class="project-card glass-card" id="project3">
+          <div class="project-glow glow-3"></div>
+          <div class="project-header"><div class="project-icon">📊</div><div class="project-links"><a href="https://github.com/Ruchisingh13/SuperStoreSales-forcasting" target="_blank" class="proj-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></div></div>
+          <h3 class="project-title">Tata Group Data Analytics - Forage</h3>
+          <p class="project-desc">Performed exploratory data analysis (EDA) using AI tools to identify data quality issues and risk indicators. Developed a no-code predictive model framework for customer delinquency risk assessment and designed AI-driven collections strategy.</p>
+          <div class="project-tech"><span>Python</span><span>EDA</span><span>Power BI</span><span>AI Tools</span><span>Risk Analysis</span></div>
+          <div class="project-feature-pills"><span class="feature-pill">🔍 EDA</span><span class="feature-pill">⚖️ Ethical AI</span><span class="feature-pill">🛡️ Risk Assessment</span></div>
+          <a href="https://github.com/Ruchisingh13/SuperStoreSales-forcasting" target="_blank" class="proj-demo-btn" id="demo3">View on GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        </div>
+      </div>
+      <div class="projects-cta"><a href="https://github.com/Ruchisingh13" target="_blank" class="btn-secondary" id="viewAllProjects">View All on GitHub <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></div>
+    </div>
+  </section>
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">Get in touch</span><h2 class="section-title">Lets <span class="gradient-text">Connect</span></h2><p class="section-subtitle">Open to full-time roles, internships, and exciting collaborations in AI/ML and Data Science.</p></div>
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <a href="mailto:ruchisingh748828@gmail.com" class="contact-card glass-card" id="emailCard"><div class="contact-card-icon">📧</div><h3>Email Me</h3><p>ruchisingh748828@gmail.com</p></a>
+          <a href="https://www.linkedin.com/in/ruchi-singh-393016241/" target="_blank" class="contact-card glass-card" id="linkedinCard"><div class="contact-card-icon">💼</div><h3>LinkedIn</h3><p>ruchi-singh-393016241</p></a>
+          <a href="https://github.com/Ruchisingh13" target="_blank" class="contact-card glass-card" id="githubCard"><div class="contact-card-icon">🐙</div><h3>GitHub</h3><p>Ruchisingh13</p></a>
+          <div class="contact-card glass-card" id="phoneCard"><div class="contact-card-icon">📱</div><h3>Call / WhatsApp</h3><p>+91 9608919040</p></div>
+        </div>
+        <div class="contact-form-wrapper glass-card">
+          <h3>Send a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group"><input type="text" id="senderName" name="name" placeholder="Your Name" required /><label for="senderName">Your Name</label></div>
+            <div class="form-group"><input type="email" id="senderEmail" name="email" placeholder="Your Email" required /><label for="senderEmail">Your Email</label></div>
+            <div class="form-group"><input type="text" id="msgSubject" name="subject" placeholder="Subject" /><label for="msgSubject">Subject</label></div>
+            <div class="form-group"><textarea id="msgBody" name="message" placeholder="Your Message" rows="4" required></textarea><label for="msgBody">Message</label></div>
+            <button type="submit" class="btn-primary form-submit" id="submitContactForm">Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo"><span class="logo-bracket">&lt;</span>RS<span class="logo-bracket">/&gt;</span></div>
+        <p class="footer-tagline">Crafting intelligent solutions with Python and ML</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/ruchi-singh-393016241/" target="_blank" aria-label="LinkedIn" id="linkedinFooter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://github.com/Ruchisingh13" target="_blank" aria-label="GitHub" id="githubFooter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <a href="mailto:ruchisingh748828@gmail.com" aria-label="Email" id="emailFooter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+        <p class="footer-copy">2025 Ruchi Singh. Built with love and Python</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
