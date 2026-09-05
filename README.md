@@ -72,6 +72,8 @@ Ruchi_Portfolio/
 
 ## 🚀 How to Run
 
+## live on: https://ruchisingh13.github.io/Portfolio/
+
 ### Option 1 — Python HTTP Server (Recommended)
 ```bash
 cd Ruchi_Portfolio
